@@ -7,7 +7,6 @@ env/
 ENV/
 
 # Poetry
-poetry.lock
 .venv/
 
 # Python cache
