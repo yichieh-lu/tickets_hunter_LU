@@ -2,6 +2,13 @@
 /.vscode
 /.idea
 .venv/
+venv/
+env/
+ENV/
+
+# Poetry
+poetry.lock
+.venv/
 
 # Python cache
 __pycache__/

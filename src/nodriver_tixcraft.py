@@ -6931,7 +6931,7 @@ async def nodriver_ticketplus_unified_select(tab, config_dict, area_keyword):
                     exclude_keywords = [keyword_exclude.strip()] if keyword_exclude.strip() else []
 
         # 統一的結構化判斷與選擇邏輯
-        js_result = await tab.evaluate(f'''
+        js_result = await tab.evaluate(rf'''
             (async function() {{
                 const keyword = '{area_keyword}';
                 const ticketNumber = {ticket_number};
@@ -19342,7 +19342,7 @@ async def nodriver_udn_seat_auto_select(tab, config_dict):
 
     try:
         import json
-        result = await tab.evaluate(f'''
+        result = await tab.evaluate(rf'''
             (function() {{
                 const ticketNumber = {ticket_number};
                 const showDebug = {json.dumps(show_debug)};
